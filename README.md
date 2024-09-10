@@ -1,5 +1,5 @@
 
-<div style="text-align: center">
+<div style="text-align: center" align="center">
 <img src="./logo.png" width='120' />
 <p>陀螺匠·企业助手数智化管理系统</p>
 
@@ -98,7 +98,7 @@ PC端：**https://demo.tuoluojiang.com/admin**
 
 **扫码进群可领取开源版产品功能清单、高清UI设计图、思维脑图！**
 
-<div style="text-align: center">
+<div style="text-align: center" align="center">
 <img src="./open_code.png" width='396'  alt=""/>
 </div>
 
