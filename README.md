@@ -11,14 +11,17 @@
 
 ---
 
-# 📔 更新说明
+## 📔 更新说明
+
 点击查看[更新记录](https://tuoluojiang.com/doc/own/382)
 
 用心做开源，我们也很需要你的鼓励！右上角Star🌟，等你点亮！
+***
 
 ---
 
-<h2 id="sbLRF">📝 项目介绍</h2>
+## 📝 项目介绍
+
 《陀螺匠·企业助手》是一套采用Laravel 9框架结合Swoole高性能服务器与Vue.js前端技术栈构建的新型智慧企业管理与运营系统。陀螺匠深度融合了客户管理、项目管理、审批流程自动化以及低代码开发平台，旨在为企业提供一站式、数智化转型的全方位解决方案，助力企业高效运营与智能决策。
 
 《陀螺匠·企业助手》是帮助中小型企业尽快实现“慧”管理，迅速成长为“专精特新”企业的企业管理、运营助手；从企业管理、运营知识的传输，再到如何实际应用《陀螺匠·企业助手》进行企业管理，落实专业知识，加以企业危机分析以及如何化解危机一系列流程；致使企业生命力顽强，团队强自驱，企业自动化运转，成为业界领头羊。
@@ -27,12 +30,14 @@
 
 ---
 
-<h2 id="LQqq1">📝 产品架构</h2>
+## 📝 产品架构图
+
 ![](https://cdn.nlark.com/yuque/0/2024/png/1297381/1725857822891-5a46c65a-3a8e-44d8-a41e-27d26a4fbb61.png?x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cw_1500%2Climit_0)
 
 ---
 
-<h2 id="fYVN4">💯 系统亮点</h2>
+## 💯 系统亮点
+
 1.前后端分离：后端Laravel 9+Swoole，前端Element UI+Vue.js；
 
 2.代码规范：遵循PSR-2命名规范、Restful标准接口、代码严格分层、注释齐全、统一错误码；
@@ -55,26 +60,27 @@
 
 ---
 
-<h2 id="I6R1J">💻 服务器环境</h2>
-<font style="color:rgb(36, 41, 46);">PHNginx</font>
+## 💻 服务器环境
 
-<font style="color:rgb(36, 41, 46);">PHP 8.0-8.2</font>
+PHP Nginx
 
-<font style="color:rgb(36, 41, 46);">MySQL 5.7-8.0</font>
+PHP 8.0-8.2
 
-<font style="color:rgb(36, 41, 46);">Redis</font>
+MySQL 5.7-8.0
 
-> <font style="color:rgb(106, 115, 125);">温馨提示：虚拟空间不支持，推荐使用bt宝塔面板，服务器推荐京东云服务器：</font>[注册即享6.5折专属优惠，点我领取！](https://gitee.com/link?target=https%3A%2F%2Fpartner.jdcloud.com%2Fpartner%2Fnotice%2Fb06c3232b6394fdfa496923b8e00b286)
->
+Redis
+
+Insert blockquotes 温馨提示：虚拟空间不支持，推荐使用bt宝塔面板，服务器推荐京东云服务器：[注册即享6.5折专属优惠，点我领取！](https://gitee.com/link?target=https%3A%2F%2Fpartner.jdcloud.com%2Fpartner%2Fnotice%2Fb06c3232b6394fdfa496923b8e00b286)
 
 ---
 
-<h2 id="W70pN">🍭 系统演示</h2>
-**<font style="color:rgb(18, 18, 18);">PC端：</font>**[<font style="color:rgb(18, 18, 18);">https://demo.tuoluojiang.com/admin</font>](https://demo.tuoluojiang.com/admin)
+## 🍭 系统演示
 
-<font style="color:rgb(51, 51, 51);">账号：18888888888</font>
+PC端：**(https://demo.tuoluojiang.com/admin)**
 
-<font style="color:rgb(51, 51, 51);">密码：888888</font><font style="color:rgb(18, 18, 18);"></font>
+账号：**18888888888**
+
+密码：**888888**
 
 ---
 
@@ -83,28 +89,28 @@
 
 ---
 
-<h2 id="KvR5u">🌐 系统介绍</h2>
+## 🌐 系统介绍
 ![](https://cdn.nlark.com/yuque/0/2024/png/1297381/1724381870428-e2bc6f7a-c628-4ddd-ad9c-6c5be82ed8e2.png)
 
 ---
 
-<h2 id="Ed9Nu">📞 陀螺匠互动</h2>
+## 📞 陀螺匠互动
 **陀螺匠开源技术交流群**
 
 **扫码进群可领取开源版产品功能清单、高清UI设计图、思维脑图！**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/1297381/1725954061260-e5dcfddf-16d3-4c37-87f8-14425771de32.png)
+![输入图片说明](tuoluojang%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 **技术社区！找方法、提bug、看官方消息、拿活跃大奖！都在 **[**CRMEB 技术社区**](https://www.crmeb.com/ask/thread/list/157)** 应有尽有~**
 
 ---
 
-<h2 id="FsCRX"><font style="color:rgb(64, 72, 91);">📸</font><font style="color:rgb(64, 72, 91);"> 特别鸣谢</font></h2>
+## 📸 特别鸣谢
 <font style="color:rgb(64, 72, 91);">排名不分先后，感谢这些软件的开发者：thinkphp、element、vue、mysql、redis、echarts、tree-table-vue、swiper、form-create等，如有遗漏请联系我！</font>
 
 ---
 
-<h2 id="xd4jM"><font style="color:rgb(64, 72, 91);">💾</font><font style="color:rgb(64, 72, 91);"> 版权信息</font></h2>
+## 💾 版权信息
 <font style="color:rgb(64, 72, 91);">本项目包含的第三方源码和二进制文件之版权信息另行标注。</font>
 
 <font style="color:rgb(64, 72, 91);">版权所有Copyright </font><font style="color:rgb(64, 72, 91);">©</font><font style="color:rgb(64, 72, 91);"> 2017-2024 by 陀螺匠 (</font>[<font style="color:rgb(64, 72, 91);">https://tuoluojiang.com</font>](https://tuoluojiang.com)<font style="color:rgb(64, 72, 91);">)</font>
