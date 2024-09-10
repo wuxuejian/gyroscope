@@ -2,8 +2,9 @@
 
 <div style="display: flex; justify-content: center">
 <div style=“width:100%; margin:0 auto;”>
-<img src="./tuoluojiang%E8%93%9D%E5%BA%95.png" width=80/>
-
+<div align="center" >
+<img src="./tuoluojiang%E8%93%9D%E5%BA%95.png" width=200/>
+</div>
 <span style="padding-left: 200px;">陀螺匠·企业助手数智化管理系统</span>
 
 [官网](https://tuoluojiang.com)｜[在线体验](https://demo.tuoluojiang.com/)｜[帮助文档](https://tuoluojiang.com/doc/own/209)｜[应用市场](https://www.crmeb.com/market/)｜[技术社区](https://www.crmeb.com/ask/thread/list/157)
