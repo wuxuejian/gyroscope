@@ -1,6 +1,4 @@
 
-
-![输入图片说明](tuoluojiang%E8%93%9D%E5%BA%95.png)
 <div style="padding-left: 400px;">
 <img src="./tuoluojiang%E8%93%9D%E5%BA%95.png" width=200/>
 </div>
