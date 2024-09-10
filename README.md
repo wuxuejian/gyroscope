@@ -75,7 +75,7 @@ Redis
 
 ## 🍭 系统演示
 
-PC端：**(https://demo.tuoluojiang.com/admin)**
+PC端：**https://demo.tuoluojiang.com/admin**
 
 账号：**18888888888**
 
