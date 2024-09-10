@@ -1,10 +1,8 @@
 
-
-<div style="display: flex; justify-content: center">
-<div style=“width:100%; margin:0 auto;”>
 <div align="center" >
 <img src="./tuoluojiang%E8%93%9D%E5%BA%95.png" width='120' />
 </div>
+<div align="center" >
 <span style="padding-left: 200px;">陀螺匠·企业助手数智化管理系统</span>
 
 [官网](https://tuoluojiang.com)｜[在线体验](https://demo.tuoluojiang.com/)｜[帮助文档](https://tuoluojiang.com/doc/own/209)｜[应用市场](https://www.crmeb.com/market/)｜[技术社区](https://www.crmeb.com/ask/thread/list/157)
@@ -102,7 +100,9 @@ PC端：**https://demo.tuoluojiang.com/admin**
 
 **扫码进群可领取开源版产品功能清单、高清UI设计图、思维脑图！**
 
-![输入图片说明](tuoluojiang%E9%99%80%E8%9E%BA%E5%8C%A0%E5%BC%80%E6%BA%90%E4%BA%A4%E6%B5%81%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+<div align="center" >
+<img src="./tuoluojiang%E9%99%80%E8%9E%BA%E5%8C%A0%E5%BC%80%E6%BA%90%E4%BA%A4%E6%B5%81%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png" width='120' />
+</div>
 
 **技术社区！找方法、提bug、看官方消息、拿活跃大奖！都在 **[**CRMEB 技术社区**](https://www.crmeb.com/ask/thread/list/157)** 应有尽有~**
 
