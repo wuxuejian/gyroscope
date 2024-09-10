@@ -31,7 +31,7 @@
 
 ## 📝 产品架构图
 
- <img src="./tuoluojiang产品架构图.png">
+![输入图片说明](tuoluojang%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 ---
 
@@ -69,7 +69,7 @@ MySQL 5.7-8.0
 
 Redis
 
-Insert blockquotes 温馨提示：虚拟空间不支持，推荐使用bt宝塔面板，服务器推荐京东云服务器：[注册即享6.5折专属优惠，点我领取！](https://gitee.com/link?target=https%3A%2F%2Fpartner.jdcloud.com%2Fpartner%2Fnotice%2Fb06c3232b6394fdfa496923b8e00b286)
+> 温馨提示：虚拟空间不支持，推荐使用bt宝塔面板，服务器推荐京东云服务器：[注册即享6.5折专属优惠，点我领取！](https://gitee.com/link?target=https%3A%2F%2Fpartner.jdcloud.com%2Fpartner%2Fnotice%2Fb06c3232b6394fdfa496923b8e00b286)
 
 ---
 
@@ -83,37 +83,43 @@ PC端：**(https://demo.tuoluojiang.com/admin)**
 
 ---
 
-<h2 id="fGvpW"><font style="color:rgb(64, 72, 91);">🔐</font><font style="color:rgb(64, 72, 91);"> 安装教程</font></h2>
-<font style="color:rgb(64, 72, 91);">想要快速安装，教程来助攻！</font>[查看安装教程](https://tuoluojiang.com/doc/own/127)
+## 🔐 安装教程
+
+想要快速安装，教程来助攻！[查看安装教程](https://tuoluojiang.com/doc/own/127)
 
 ---
 
 ## 🌐 系统介绍
-![](https://cdn.nlark.com/yuque/0/2024/png/1297381/1724381870428-e2bc6f7a-c628-4ddd-ad9c-6c5be82ed8e2.png)
+
+![输入图片说明](tuoluojiang%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D.png)
 
 ---
 
 ## 📞 陀螺匠互动
+
 **陀螺匠开源技术交流群**
 
 **扫码进群可领取开源版产品功能清单、高清UI设计图、思维脑图！**
 
-![输入图片说明](tuoluojang%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![输入图片说明](tuoluojiang%E9%99%80%E8%9E%BA%E5%8C%A0%E5%BC%80%E6%BA%90%E4%BA%A4%E6%B5%81%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
 
 **技术社区！找方法、提bug、看官方消息、拿活跃大奖！都在 **[**CRMEB 技术社区**](https://www.crmeb.com/ask/thread/list/157)** 应有尽有~**
 
 ---
 
 ## 📸 特别鸣谢
-<font style="color:rgb(64, 72, 91);">排名不分先后，感谢这些软件的开发者：thinkphp、element、vue、mysql、redis、echarts、tree-table-vue、swiper、form-create等，如有遗漏请联系我！</font>
+
+排名不分先后，感谢这些软件的开发者：thinkphp、element、vue、mysql、redis、echarts、tree-table-vue、swiper、form-create等，如有遗漏请联系我！
 
 ---
 
 ## 💾 版权信息
-<font style="color:rgb(64, 72, 91);">本项目包含的第三方源码和二进制文件之版权信息另行标注。</font>
 
-<font style="color:rgb(64, 72, 91);">版权所有Copyright </font><font style="color:rgb(64, 72, 91);">©</font><font style="color:rgb(64, 72, 91);"> 2017-2024 by 陀螺匠 (</font>[<font style="color:rgb(64, 72, 91);">https://tuoluojiang.com</font>](https://tuoluojiang.com)<font style="color:rgb(64, 72, 91);">)</font>
 
-<font style="color:rgb(64, 72, 91);">All rights reserved。</font>
+本项目包含的第三方源码和二进制文件之版权信息另行标注。
 
-<font style="color:rgb(64, 72, 91);">陀螺匠商标和著作权所有者为西安众邦网络科技有限公司。</font>
+版权所有Copyright © 2017-2024 by 陀螺匠 (https://tuoluojiang.com)
+
+All rights reserved。
+
+陀螺匠商标和著作权所有者为西安众邦网络科技有限公司。
