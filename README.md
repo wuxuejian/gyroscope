@@ -1,6 +1,8 @@
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/1297381/1724312825546-9452fbb3-5d16-449f-bafd-0de88367ef38.png)
+![输入图片说明](tuoluojiang%E8%93%9D%E5%BA%95.png)
+
+<img src="./tuoluojiang%E8%93%9D%E5%BA%95.png"/>
 
 陀螺匠·企业助手数智化管理系统
 
