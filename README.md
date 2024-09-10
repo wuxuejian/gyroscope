@@ -2,7 +2,7 @@
 
 ![输入图片说明](tuoluojiang%E8%93%9D%E5%BA%95.png)
 
-<img src="./tuoluojiang%E8%93%9D%E5%BA%95.png"/>
+<img src="./tuoluojiang%E8%93%9D%E5%BA%95.png" width=200/>
 
 陀螺匠·企业助手数智化管理系统
 
