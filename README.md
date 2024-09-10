@@ -16,7 +16,6 @@
 点击查看[更新记录](https://tuoluojiang.com/doc/own/382)
 
 用心做开源，我们也很需要你的鼓励！右上角Star🌟，等你点亮！
-***
 
 ---
 
@@ -32,7 +31,7 @@
 
 ## 📝 产品架构图
 
-![](https://cdn.nlark.com/yuque/0/2024/png/1297381/1725857822891-5a46c65a-3a8e-44d8-a41e-27d26a4fbb61.png?x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cw_1500%2Climit_0)
+ <img src="./tuoluojiang产品架构图.png">
 
 ---
 
