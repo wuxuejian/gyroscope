@@ -2,7 +2,7 @@
 
 <div style="display: flex; justify-content: center">
 <div style=“width:100%; margin:0 auto;”>
-<img src="./tuoluojiang%E8%93%9D%E5%BA%95.png" width=150/>
+<img src="./tuoluojiang%E8%93%9D%E5%BA%95.png" width=80/>
 
 <span style="padding-left: 200px;">陀螺匠·企业助手数智化管理系统</span>
 
