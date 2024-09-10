@@ -1,4 +1,6 @@
 
+
+
 <div style="padding-left: 400px;">
              <img src="./tuoluojiang%E8%93%9D%E5%BA%95.png" width=200/>
 </div>
@@ -7,13 +9,11 @@
 [官网](https://tuoluojiang.com)｜[在线体验](https://demo.tuoluojiang.com/)｜[帮助文档](https://tuoluojiang.com/doc/own/209)｜[应用市场](https://www.crmeb.com/market/)｜[技术社区](https://www.crmeb.com/ask/thread/list/157)
 
 
-
-
 ---
 
-<h2 id="uOOdT">📔 更新说明</h2>
-点击查看[更新记录](https://tuoluojiang.com/doc/own/382)<font style="color:rgb(64, 72, 91);">  
-</font>**<font style="color:rgb(64, 72, 91);">用心做开源，我们也很需要你的鼓励！右上角Star</font>****<font style="color:rgb(64, 72, 91);">🌟</font>****<font style="color:rgb(64, 72, 91);">，等你点亮！</font>**
+📔 更新说明
+点击查看更新记录
+用心做开源，我们也很需要你的鼓励！右上角Star🌟，等你点亮！
 
 ---
 
