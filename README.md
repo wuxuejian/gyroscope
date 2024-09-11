@@ -42,7 +42,7 @@
 
 4.开发配置：低代码增加配置、系统组合数据模块；
 
-6.定时任务：系统内置10中定时任务，还有自定义任务，可以自行设置执行周期，执行代码，完美兼容；
+6.定时任务：系统内置10种定时任务，还有自定义任务，可以自行设置执行周期，执行代码，完美兼容；
 
 7.系统事件：埋入30+系统事件锚点，可在后台页面进行事件添加；
 
@@ -108,7 +108,7 @@ PC端：**https://demo.tuoluojiang.com/admin**
 
 ## 📸 特别鸣谢
 
-排名不分先后，感谢这些软件的开发者：thinkphp、element、vue、mysql、redis、echarts、tree-table-vue、swiper、form-create等，如有遗漏请联系我！
+排名不分先后，感谢这些软件的开发者：Laravel、Element、Vue、Mysql、Redis、Echarts、Form-create等，如有遗漏请联系我！
 
 ---
 
