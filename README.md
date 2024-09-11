@@ -97,7 +97,7 @@ PC端：**https://demo.tuoluojiang.com/admin**
 **扫码进群可领取开源版产品功能清单、高清UI设计图、思维脑图！**
 
 <div style="text-align: center" align="center">
-<img src="./open_code.png" width='396'  alt=""/>
+<img src="./open_code.png" width='300'  alt=""/>
 </div>
 
 **技术社区！找方法、提bug、看官方消息、拿活跃大奖！都在 **[**CRMEB 技术社区**](https://www.crmeb.com/ask/thread/list/157)** 应有尽有~**
@@ -106,7 +106,7 @@ PC端：**https://demo.tuoluojiang.com/admin**
 
 ## 📸 特别鸣谢
 
-排名不分先后，感谢这些软件的开发者：thinkphp、element、vue、mysql、redis、echarts、tree-table-vue、swiper、form-create等，如有遗漏请联系我！
+排名不分先后，感谢这些软件的开发者：Laravel、Element-UI、Vue、Mysql、Redis、Echarts、Form-Create等，如有遗漏请联系我！
 
 ---
 
