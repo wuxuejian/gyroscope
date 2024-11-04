@@ -17,6 +17,5 @@ database/.DS_Store
 runtime
 /public/install/install.lock
 .phpstorm.meta.php
-vendor
 app/JobsB
 packages/
