@@ -3,7 +3,7 @@
 <img src="./readme/logo.png" width='120' />
 <p>陀螺匠·企业助手数智化管理系统</p>
 
-[官网](https://tuoluojiang.com)｜[在线体验](https://demo.tuoluojiang.com/)｜[帮助文档](https://tuoluojiang.com/doc/own/209)｜[应用市场](https://www.crmeb.com/market/)｜[技术社区](https://www.crmeb.com/ask/thread/list/157)
+[官网](https://tuoluojiang.com)｜[在线体验](https://demo.tuoluojiang.com/)｜[帮助文档](https://doc.crmeb.com/tuoluojiang)｜[应用市场](https://www.crmeb.com/market/)｜[技术社区](https://www.crmeb.com/ask/thread/list/157)
 </div>
 
 ---
@@ -72,7 +72,7 @@ PC端：**https://demo.tuoluojiang.com/admin**
 
 ## 🔐 安装教程
 
-想要快速安装，教程来助攻！[查看安装教程](https://tuoluojiang.com/doc/own/127)
+想要快速安装，教程来助攻！[查看安装教程](https://doc.crmeb.com/tuoluojiang/tuoluojiang18/16817)
 
 ---
 
