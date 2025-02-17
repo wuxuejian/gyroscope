@@ -10,7 +10,7 @@
 
 ## 📔 更新说明
 
-点击查看[更新记录](https://tuoluojiang.com/doc/own/402)
+点击查看[更新记录](https://doc.crmeb.com/tuoluojiang/tuoluojiang18/16846)
 
 **用心做开源，我们也很需要你的鼓励！右上角Star🌟，等你点亮！**
 
