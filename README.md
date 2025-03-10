@@ -138,16 +138,15 @@ Supervisor管理器
 
 **前端框架**
 
-| 技术  ｜ 名称  | 版本号 | 官网 
-| ----------- | ----------- | ----------- | ----------- 
-| vue2      |  MVVM框架   ｜ 2.6.10   | https://v2.cn.vuejs.org/v2/guide
-| elementUI      |  UI组件库  ｜ 2.15.14   | https://element.eleme.cn
-| vuex      |  状态管理模式 + 库   ｜ 3.1.0  | https://vuex.vuejs.org
-| vue-router     |  路由管理   ｜ 3.0.2  | https://router.vuejs.org
-| webpack      |  静态模块打包工具   ｜ 4.44.2   | https://www.webpackjs.com
+|技术| 名称 | 版本号| 官网 |
+|----------- |----------- |----------- |-----------  |
+| vue2      |  MVVM框架   | 2.6.10   | https://v2.cn.vuejs.org/v2/guide |
+| elementUI      |  UI组件库  | 2.15.14  | https://element.eleme.cn |
+| vuex      |  状态管理模式 + 库   | 3.1.0  | https://vuex.vuejs.org|
+| vue-router  |  路由管理   | 3.0.2  | https://router.vuejs.org |
+| webpack     | 静态模块打包工具  | 4.44.2   | https://www.webpackjs.com |
 
 
----
 
 ## 👊想要快速安装，教程来助攻！
 
