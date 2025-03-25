@@ -162,7 +162,7 @@ Linux安装教程：https://doc.crmeb.com/tuoluojiang/tuoluojiang19/19108
 
 使用文档：https://doc.crmeb.com/tuoluojiang
 
-接口文档：https://app.apifox.com/main/teams/23457?tab=project
+接口文档：https://apifox.com/apidoc/shared-c280d902-20d4-491e-987f-c7aa7e6150e1
 
 视频教程：https://www.bilibili.com/video/BV1t7qzYsE4a
 
