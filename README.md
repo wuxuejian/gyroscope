@@ -14,7 +14,7 @@
 
 《陀螺匠·企业助手》是一套采用Laravel 9框架结合Swoole高性能框架与Vue.js前端技术栈构建的新型智慧企业管理与运营系统。陀螺匠深度融合了AI智能体、客户管理、项目管理、审批流程自动化以及低代码开发平台，系统简约，易于功能扩展，方便二次开发。旨在为企业提供一站式、数智化转型的全方位解决方案，助力企业高效运营与智能决策。
 
-[🔗功能列表](https://doc.crmeb.com/tuoluojiang/tuoluojiang19/19078)｜[📮提交反馈](https://www.crmeb.com/ask/thread/list/157)
+[🔗功能列表](https://doc.crmeb.com/tuoluojiang/tuoluojiang20/21083)｜[📮提交反馈](https://www.crmeb.com/ask/thread/list/157)
 
 ---
 
