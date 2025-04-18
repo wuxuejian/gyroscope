@@ -72,6 +72,8 @@ AI、低代码、考勤打卡、审批流、工作汇报、绩效管理、客户
 ![输入图片说明](readme/%E5%AE%A2%E6%88%B7-%E5%8F%91%E7%A5%A8%E7%AE%A1%E7%90%86.png)
 ![输入图片说明](readme/%E5%8A%9E%E5%85%AC-%E6%88%91%E7%9A%84%E6%97%A5%E7%A8%8B%EF%BC%88%E5%A4%A9%EF%BC%89.png)
 ![输入图片说明](readme/%E9%A1%B9%E7%9B%AE-%E6%88%91%E7%9A%84%E4%BB%BB%E5%8A%A1.png)
+![输入图片说明](readme/%E5%BA%94%E7%94%A8%E5%88%97%E8%A1%A8%E8%AE%BE%E7%BD%AE.png)
+![输入图片说明](readme/AI%E5%8A%A9%E6%89%8B%E5%88%97%E8%A1%A8%E6%A0%B7%E5%BC%8F.png)
 
 ---
 
