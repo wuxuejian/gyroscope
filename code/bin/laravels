@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+$basePath = dirname(__DIR__) . '/';
+require $basePath.'/vendor/autoload.php';
+if (!file_exists($basePath.'.env')) {
+    @shell_exec('cp -f '. $basePath.'.env.example '. $basePath.'.env');
+}
+$command = new crmeb\swoole\laravels\Portal($basePath);
+$input = new Symfony\Component\Console\Input\ArgvInput();
+$output = new Symfony\Component\Console\Output\ConsoleOutput();
+$code = $command->run($input, $output);
+exit($code);

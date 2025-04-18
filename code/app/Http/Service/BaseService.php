@@ -1,0 +1,178 @@
+<?php
+
+declare(strict_types=1);
+/**
+ *  +----------------------------------------------------------------------
+ *  | 陀螺匠 [ 赋能开发者，助力企业发展 ]
+ *  +----------------------------------------------------------------------
+ *  | Copyright (c) 2016~2025 https://www.tuoluojiang.com All rights reserved.
+ *  +----------------------------------------------------------------------
+ *  | Licensed 陀螺匠并不是自由软件，未经许可不能去掉陀螺匠相关版权
+ *  +----------------------------------------------------------------------
+ *  | Author: 陀螺匠 Team <admin@tuoluojiang.com>
+ *  +----------------------------------------------------------------------
+ */
+
+namespace App\Http\Service;
+
+use App\Http\Dao\BaseDao;
+use crmeb\exceptions\ServicesException;
+use crmeb\traits\service\ServicesTrait;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\DB;
+
+/**
+ * 基础services类
+ * Class BaseService.
+ */
+abstract class BaseService
+{
+    use ServicesTrait;
+
+    /**
+     * @var BaseDao
+     */
+    protected $dao;
+
+    /**
+     * 设置的entid.
+     * @var null
+     */
+    protected $entValue;
+
+    /**
+     * 列表默认返回字段.
+     * @var string[]
+     */
+    protected $listField = [
+        'list'  => 'list',
+        'count' => 'count',
+    ];
+
+    /**
+     * @param mixed $name
+     * @param mixed $arguments
+     * @return mixed
+     */
+    public function __call($name, $arguments)
+    {
+        $this->runListen($name);
+        // TODO: Implement __call() method.
+        return call_user_func_array([$this->dao, $name], $arguments);
+    }
+
+    /**
+     * @return $this
+     */
+    public function setEntValue(int $entid)
+    {
+        $this->entValue = $entid;
+        return $this;
+    }
+
+    /**
+     * 获取分页配置.
+     * @return int[]
+     */
+    public function getPageValue(bool $isPage = true, bool $isRelieve = true)
+    {
+        $page = $limit = 0;
+        if ($isPage) {
+            $page  = request()->input(Config::get('database.page.pageKey', 'page'), 0);
+            $limit = request()->input(Config::get('database.page.limitKey', 'limit'), 0);
+        }
+        $limitMax     = Config::get('database.page.limitMax');
+        $defaultLimit = Config::get('database.page.defaultLimit', 10);
+        if ($limit > $limitMax && $isRelieve) {
+            $limit = $limitMax;
+        }
+        return [(int) $page, (int) $limit, (int) $defaultLimit];
+    }
+
+    /**
+     * 数据库事务操作.
+     * @param bool $isTran
+     * @return mixed
+     */
+    public function transaction(callable $closure, $isTran = true)
+    {
+        return $isTran ? DB::transaction($closure) : $closure();
+    }
+
+    /**
+     * 抛出错误.
+     * @param null|mixed $exception
+     * @return ServicesException
+     */
+    public function exception(array|string $message, int $code = 0, $exception = null)
+    {
+        $message = is_array($message) ? json_encode($message) : $message;
+        if (! $exception) {
+            return new ServicesException($message, $code);
+        }
+        return new $exception($message, $code);
+    }
+
+    /**
+     * 返回数据整理.
+     * @param mixed $data
+     * @return array
+     */
+    public function listData($data, int $count = 0, array $other = [])
+    {
+        if ($data instanceof Model) {
+            $data = $data->toArray();
+        }
+
+        $returnData = [
+            $this->listField['list']  => $data,
+            $this->listField['count'] => $count,
+        ];
+
+        if ($other) {
+            $returnData = array_merge($returnData, $other);
+        }
+
+        return $returnData;
+    }
+
+    /**
+     * 是否为企业后台.
+     * @return bool
+     */
+    protected function isEnt()
+    {
+        $request = request();
+        return $request->hasMacro('isEnt') && $request->isEnt();
+    }
+
+    /**
+     * 获取企业id.
+     * @return \Closure|int
+     */
+    protected function entId(bool $isClosure = true)
+    {
+        $request = request();
+        $closure = function () use ($request) {
+            if ($this->entValue) {
+                return $this->entValue;
+            }
+            return $request->hasMacro('entId') ? $request->entId() : 0;
+        };
+        return $isClosure ? $closure : $closure();
+    }
+
+    /**
+     * 获取用户uid.
+     * @return \Closure|int
+     */
+    protected function uuId(bool $isClosure = true)
+    {
+        $request = request();
+        $closure = function () use ($request) {
+            return $request->hasMacro('uuId') ? $request->uuId() : '';
+        };
+        return $isClosure ? $closure : $closure();
+    }
+}

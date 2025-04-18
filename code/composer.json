@@ -1,0 +1,119 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "ext-bcmath": "*",
+        "ext-curl": "*",
+        "ext-gd": "*",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "ext-zip": "*",
+        "alipaysdk/easysdk": "^2.2",
+        "aliyuncs/oss-sdk-php": "^2.4",
+        "aws/aws-sdk-php": "^3.303",
+        "casbin/laravel-authz": "^3.1",
+        "crmeb/yihaotong": "v1.2.8",
+        "defuse/php-encryption": "^2.3",
+        "fastknife/ajcaptcha": "^1.2",
+        "fideloper/proxy": "^4.4",
+        "fruitcake/laravel-cors": "^2.0",
+        "getuilaboratory/getui-pushapi-php-client-v2": "dev-master",
+        "guzzlehttp/guzzle": "^7.8",
+        "hhxsv5/laravel-s": "^3.7",
+        "intervention/image": "^2.7",
+        "laravel/framework": "^9",
+        "laravel/tinker": "^2.5",
+        "madnest/madzipper": "^1.1.1",
+        "mews/captcha": "^3.2",
+        "open-smf/connection-pool": "^1.0",
+        "overtrue/pinyin": "^5.3",
+        "phpoffice/phppresentation": "^0.9.0",
+        "phpoffice/phpspreadsheet": "^1.17",
+        "phpoffice/phpword": "^1.2",
+        "predis/predis": "^1.1",
+        "qcloud/cos-sdk-v5": "^2.5.6",
+        "qcloud_sts/qcloud-sts-sdk": "^3.0",
+        "qiniu/php-sdk": "^7.9",
+        "spatie/laravel-route-attributes": "^1.20",
+        "swoole/ide-helper": "^4.6",
+        "symfony/css-selector": "6.0.11",
+        "symfony/deprecation-contracts": "3.0.2",
+        "symfony/event-dispatcher": "6.0.9",
+        "symfony/event-dispatcher-contracts": "3.0.2",
+        "symfony/expression-language": "^6.0",
+        "symfony/http-foundation": "6.0.20",
+        "symfony/options-resolver": "6.0.3",
+        "symfony/stopwatch": "6.0.5",
+        "symfony/string": "6.0.12",
+        "symfony/translation": "6.0.12",
+        "symfony/translation-contracts": "3.0.2",
+        "tymon/jwt-auth": "^2.1",
+        "webpatser/laravel-uuid": "^4.0",
+        "xaboy/form-builder": "^2.0"
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.4",
+        "fakerphp/faker": "^1.9.1",
+        "friendsofphp/php-cs-fixer": "3.11.0",
+        "kitloong/laravel-migrations-generator": "^6.8",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.3.3",
+        "spatie/laravel-ignition": "^1.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "crmeb\\": "crmeb/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Tuoluojiang\\Schedule\\": "packages/tuoluojiang/schedule/src/"
+        },
+        "files": [
+            "app/Helpers/common.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
