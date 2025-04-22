@@ -1,7 +1,7 @@
 
 <div style="text-align: center" align="center">
 <img src="./readme/logo.png" width='120' />
-<p>陀螺匠·企业助手数智化管理系统</p>
+<p>陀螺匠·AI+低代码双引擎智能办公系统</p>
 
 [官网](https://tuoluojiang.com)｜[在线体验](https://demo.tuoluojiang.com/)｜[帮助文档](https://doc.crmeb.com/tuoluojiang)｜[应用市场](https://www.crmeb.com/market/)｜[技术社区](https://www.crmeb.com/ask/thread/list/157)
 </div>
