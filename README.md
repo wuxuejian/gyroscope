@@ -189,7 +189,7 @@ Linux安装教程：https://doc.crmeb.com/tuoluojiang/tuoluojiang19/19108
 
 **扫码进群可领取开源版产品功能清单、高清UI设计图、思维脑图！**
 
-![输入图片说明](readme/image.png)
+![输入图片说明](readme/image1.jpg)
 
 **技术社区！找方法、提bug、看官方消息、拿活跃大奖！都在 **[**CRMEB 技术社区**](https://www.crmeb.com/ask/thread/list/157)** 应有尽有~**
 
@@ -211,3 +211,10 @@ Linux安装教程：https://doc.crmeb.com/tuoluojiang/tuoluojiang19/19108
 All rights reserved。
 
 陀螺匠商标和著作权所有者为西安众邦网络科技有限公司。
+
+
+## 欢迎了解CRMEB多商户商城系统
+
+![输入图片说明](readme/%E5%BC%80%E6%BA%90%E7%AB%99%E5%A4%9A%E5%95%86%E6%88%B7PHP.jpg)
+
+
