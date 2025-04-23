@@ -159,7 +159,7 @@ class WorkController extends AuthController
      * 更新统计管理.
      * @throws BindingResolutionException
      */
-    #[Put('statistics_type', '修改业绩统计类型接口')]
+    #[Post('statistics_type', '修改业绩统计类型接口')]
     public function updateStatisticsType(UserQuickService $service): mixed
     {
         [$data] = $this->request->postMore([

@@ -108,10 +108,9 @@ class UpgradeCommand extends Command
         $handlerFile = database_path('seeders/v' . $version . '/DataUpdateHandler.php');
         if (file_exists($handlerFile)) {
             require_once $handlerFile;
-        }
-
-        if (class_exists('DataUpdateHandler')) {
-            app()->get('DataUpdateHandler');
+            if (class_exists('DataUpdateHandler')) {
+                app()->get('DataUpdateHandler');
+            }
         }
 
         // update system menus
