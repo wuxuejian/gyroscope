@@ -54,11 +54,7 @@ class CloudFileCreateRemind extends Task
                 type: MessageType::CLOUD_FILE_CREATE_TYPE,
                 bathTo: $bathToUser,
                 params: [
-<<<<<<< HEAD
-                    '创建人'   => $adminService->value($this->uid, 'name'),
-=======
                     '创建人'   => $adminService->value(['id' => $this->fileInfo['user_id']], 'name'),
->>>>>>> v2.0
                     '创建时间' => date('Y-m-d H:i:s'),
                     '文件名称' => $this->fileInfo['name'],
                     '空间名称' => $folderPid['name'],

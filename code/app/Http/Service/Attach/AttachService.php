@@ -106,6 +106,11 @@ class AttachService extends BaseService
     protected int $id = 0;
 
     /**
+     * 其他选项.
+     */
+    protected array $option;
+
+    /**
      * SystemAttachServices constructor.
      */
     public function __construct(SystemAttachDao $dao)
@@ -236,7 +241,7 @@ class AttachService extends BaseService
      * 图片上传.
      * @return mixed
      */
-    public function upload(int $pid, string $file, int $upload_type = 1, int $type = 0, int $way = 1, int $entid = 1, string $uuid = '')
+    public function upload(int $pid, string $file, int $upload_type = 1, int $type = 0, int $way = 1, int $entId = 1, string $uuid = '')
     {
         if ($upload_type == 1) {
             $upload_type = sys_config('upload_type', 1) ?? 1;
@@ -262,7 +267,7 @@ class AttachService extends BaseService
                 $data['cid']           = $pid;
                 $data['uid']           = $uuid;
                 $data['way']           = $way;
-                $data['entid']         = $entid;
+                $data['entid']         = $entId;
                 $data['relation_type'] = $this->relationType;
                 $data['relation_id']   = $this->relationId;
                 $model                 = $this->dao->create($data);
@@ -349,6 +354,12 @@ class AttachService extends BaseService
             $relationId = $eid;
         }
         $this->relationId = $relationId;
+        return $this;
+    }
+
+    public function setOption(array $option = []): AttachService
+    {
+        $this->option = $option;
         return $this;
     }
 
@@ -543,6 +554,15 @@ class AttachService extends BaseService
             ]);
             return true;
         });
+    }
+
+    public function getInfo(mixed $id, array $field)
+    {
+        $info = $this->dao->get($id, $field)?->toArray();
+        if ($info['file_url']) {
+            $info['file_url'] = link_file($info['file_url']);
+        }
+        return $info;
     }
 
     /**

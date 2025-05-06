@@ -56,13 +56,6 @@ class BusinessApprovalRemind extends Task
             } else {
                 $process = app()->get(ApproveProcessService::class)->get(['approve_id' => $applyInfo['approve_id'], 'uniqued' => $applyInfo['node_id']])?->toArray();
             }
-<<<<<<< HEAD
-            if ($process && $process['types'] != 1) {
-                return;
-            }
-
-            $approveUserService = app()->get(ApproveUserService::class);
-=======
             $approveUserService = app()->get(ApproveUserService::class);
             if ($process) {
                 if ($process['types'] != 1) {
@@ -72,7 +65,6 @@ class BusinessApprovalRemind extends Task
                 event('approve.autoCopy', [[], $this->applyId, $this->entId, $approveUserService]);
                 return;
             }
->>>>>>> v2.0
             if ($applyInfo['crud_id']) {
                 $approveName = app()->get(SystemCrudApproveService::class)->value($applyInfo['approve_id'], 'name');
             } else {

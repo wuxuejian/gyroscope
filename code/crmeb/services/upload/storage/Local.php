@@ -116,12 +116,6 @@ class Local extends BaseUpload
                 return $this->setError('不合法的文件类型：' . $fileHandle->getMimeType());
             }
         }
-<<<<<<< HEAD
-        if ($realName) {
-            $fileName = Storage::disk('uploads')->putFileAs($this->path, $fileHandle, $fileHandle->getClientOriginalName());
-        } else {
-            $fileName = Storage::disk('uploads')->putFile($this->path, $fileHandle);
-=======
         // 分片上传
         $chunkTotal = $option['chunk_total'] ?? 0;
         if ($chunkTotal > 1) {
@@ -136,7 +130,6 @@ class Local extends BaseUpload
             } else {
                 $fileName = Storage::disk('uploads')->putFileAs($this->path, $fileHandle, $this->saveFileName($fileHandle->getClientOriginalName(), $fileExt));
             }
->>>>>>> v2.0
         }
         if (! $fileName) {
             return $this->setError('Upload failure');
@@ -429,8 +422,6 @@ class Local extends BaseUpload
     {
         // TODO: Implement app() method.
     }
-<<<<<<< HEAD
-=======
 
     /**
      * 分片上传.
@@ -487,5 +478,4 @@ class Local extends BaseUpload
             return is_file($item);
         })));
     }
->>>>>>> v2.0
 }
