@@ -130,7 +130,7 @@ class BillService extends BaseService implements ResourceServicesInterface
      */
     public function resourceCreate(array $other = []): array
     {
-        return $this->createElementForm('添加', $this->getRankRuleForm(collect()), '/ent/bill');
+        return $this->elForm('添加', $this->getRankRuleForm(collect()), '/ent/bill');
     }
 
     /**
@@ -149,7 +149,7 @@ class BillService extends BaseService implements ResourceServicesInterface
             throw $this->exception('数据不存在');
         }
 
-        return $this->createElementForm('编辑', $this->getRankRuleForm(collect($rankInfo->toArray())), '/ent/bill/' . $id, 'put');
+        return $this->elForm('编辑', $this->getRankRuleForm(collect($rankInfo->toArray())), '/ent/bill/' . $id, 'put');
     }
 
     /**

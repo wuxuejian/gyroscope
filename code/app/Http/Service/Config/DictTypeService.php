@@ -139,7 +139,7 @@ class DictTypeService extends BaseService implements ResourceServicesInterface
         if (! $info) {
             throw $this->exception('修改的字典不存在');
         }
-        return $this->createElementForm('修改字典', $this->getFormRule(collect($info), true), '/ent/config/dict_type/' . $id, 'PUT');
+        return $this->elForm('修改字典', $this->getFormRule(collect($info), true), '/ent/config/dict_type/' . $id, 'PUT');
     }
 
     /**

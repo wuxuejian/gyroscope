@@ -89,7 +89,7 @@ class BillCategoryService extends BaseService implements ResourceServicesInterfa
         if (! $rankCateInfo) {
             throw $this->exception('修改的财务流水类别不存在');
         }
-        return $this->createElementForm('修改财务流水类别', $this->getBillCateFormRule(collect($rankCateInfo->toArray())), '/ent/bill_cate/' . $id, 'PUT');
+        return $this->elForm('修改财务流水类别', $this->getBillCateFormRule(collect($rankCateInfo->toArray())), '/ent/bill_cate/' . $id, 'PUT');
     }
 
     /**
@@ -97,7 +97,7 @@ class BillCategoryService extends BaseService implements ResourceServicesInterfa
      */
     public function resourceCreate(array $other = []): array
     {
-        return $this->createElementForm('添加财务流水类别', $this->getBillCateFormRule(collect($other)), '/ent/bill_cate');
+        return $this->elForm('添加财务流水类别', $this->getBillCateFormRule(collect($other)), '/ent/bill_cate');
     }
 
     /**

@@ -548,9 +548,7 @@ class Install extends AuthController
                         'password' => $post['rbPwd'],
                     ]);
                     $response = $client->ping();
-                    if ($response instanceof Status && $response->getPayload() === 'PONG') {
-                        echo 'Redis connection successful!';
-                    } else {
+                    if (!($response instanceof Status) || $response->getPayload() !== 'PONG') {
                         return $this->success(['code' => -3]);
                     }
                 } catch (\Exception $e) {
