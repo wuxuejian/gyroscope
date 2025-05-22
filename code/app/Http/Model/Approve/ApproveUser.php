@@ -74,6 +74,16 @@ class ApproveUser extends BaseModel
      * @param mixed $value
      * @return mixed
      */
+    public function setProcessInfoAttribute($value)
+    {
+        $this->attributes['process_info'] = $value ? (is_array($value) ? json_encode($value) : $value) : '';
+    }
+
+    /**
+     * 表单配置提取.
+     * @param mixed $value
+     * @return mixed
+     */
     public function getUpdatedAtAttribute($value)
     {
         return $value ? Carbon::parse($value)->timezone(config('app.timezone'))->format('Y-m-d H:i') : '';
@@ -227,8 +237,22 @@ class ApproveUser extends BaseModel
     {
         if (is_array($value)) {
             $query->whereIn('status', $value);
-        } elseif ($value !== '') {
+        } else {
             $query->where('status', $value);
+        }
+    }
+
+    /**
+     * status作用域
+     * @param Builder $query
+     * @param mixed $value
+     */
+    public function scopeNotStatus($query, $value)
+    {
+        if (is_array($value)) {
+            $query->whereNotIn('status', $value);
+        } else {
+            $query->whereNot('status', $value);
         }
     }
 
@@ -265,6 +289,34 @@ class ApproveUser extends BaseModel
     {
         if ($value !== '') {
             $query->where('level', '>', $value);
+        }
+    }
+
+    /**
+     * IsSign作用域
+     * @param Builder $query
+     * @param mixed $value
+     */
+    public function scopeIsSign($query, $value)
+    {
+        if (is_array($value)) {
+            $query->whereIn('is_sign', $value);
+        } else {
+            $query->where('is_sign', $value);
+        }
+    }
+
+    /**
+     * IsTransfer作用域
+     * @param Builder $query
+     * @param mixed $value
+     */
+    public function scopeIsTransfer($query, $value)
+    {
+        if (is_array($value)) {
+            $query->whereIn('is_transfer', $value);
+        } else {
+            $query->where('is_transfer', $value);
         }
     }
 }
