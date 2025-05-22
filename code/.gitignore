@@ -5,7 +5,6 @@ public/uploads/
 database/.DS_Store
 /public/install/install.lock
 .phpstorm.meta.php
-vendor
 .env
 /storage/laravels.conf
 /storage/laravels.pid

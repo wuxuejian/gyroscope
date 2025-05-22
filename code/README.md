@@ -58,7 +58,7 @@ help	  显示帮助信息
 
 ### 安装流程
 
-1. 执行:`composer install`安装扩展
+1. 可选执行(PHP8.1),删除composer.lock文件和vendor目录，执行:`composer install`安装扩展
 2. 可选执行:`php artisan storage:link`创建本地文件映射软链
 3. 执行:`php bin/laravels start -d`启动swoole服务(默认端口20200)
 4. 按照文档配置反向代理 [Nginx反向代理参考文档](https://doc.tuoluojiang.com/doc/own/149)
