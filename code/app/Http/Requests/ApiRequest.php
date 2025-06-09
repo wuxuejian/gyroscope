@@ -19,6 +19,7 @@ use App\Http\Model\Crud\SystemCrud;
 use crmeb\exceptions\ApiRequestException;
 use crmeb\interfaces\ApiRequestInterface;
 use crmeb\traits\RequestHelpTrait;
+use crmeb\utils\Arr;
 
 /**
  * Class ApiRequest.
@@ -75,7 +76,7 @@ class ApiRequest implements ApiRequestInterface
      */
     public function getMore(array $params = [], ?bool $suffix = null): array
     {
-        $queryData = parent::getMore($this->getParamKeys($params), false);
+        $queryData = Arr::more($this->request(), $this->getParamKeys($params), $suffix);
         return $this->mergeData($queryData, $suffix);
     }
 
@@ -84,7 +85,7 @@ class ApiRequest implements ApiRequestInterface
      */
     public function postMore(array $params = [], ?bool $suffix = null): array
     {
-        $postData = parent::postMore($this->getParamKeys($params), false);
+        $postData = Arr::more($this->request(), $this->getParamKeys($params), $suffix, 'get');
         return $this->mergeData($postData, $suffix);
     }
 
