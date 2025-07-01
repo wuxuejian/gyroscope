@@ -20,6 +20,7 @@ use crmeb\exceptions\ApiRequestException;
 use crmeb\interfaces\ApiRequestInterface;
 use crmeb\traits\RequestHelpTrait;
 use crmeb\utils\Arr;
+use Illuminate\Foundation\Http\FormRequest;
 
 /**
  * Class ApiRequest.
@@ -32,7 +33,7 @@ use crmeb\utils\Arr;
  * @method array userInfo(string $key = null) 获取用户登录企业后台账号信息
  * @property SystemCrud $crudInfo
  */
-class ApiRequest implements ApiRequestInterface
+class ApiRequest extends FormRequest implements ApiRequestInterface
 {
     use RequestHelpTrait;
 
@@ -76,7 +77,7 @@ class ApiRequest implements ApiRequestInterface
      */
     public function getMore(array $params = [], ?bool $suffix = null): array
     {
-        $queryData = Arr::more($this->request(), $this->getParamKeys($params), $suffix);
+        $queryData = Arr::more($this->request(), $this->getParamKeys($params), $suffix, 'get');
         return $this->mergeData($queryData, $suffix);
     }
 
@@ -85,7 +86,7 @@ class ApiRequest implements ApiRequestInterface
      */
     public function postMore(array $params = [], ?bool $suffix = null): array
     {
-        $postData = Arr::more($this->request(), $this->getParamKeys($params), $suffix, 'get');
+        $postData = Arr::more($this->request(), $this->getParamKeys($params), $suffix);;
         return $this->mergeData($postData, $suffix);
     }
 
@@ -137,7 +138,7 @@ class ApiRequest implements ApiRequestInterface
         return $data;
     }
 
-    protected function failedValidation(Validator $validator)
+    protected function failedValidation(\Illuminate\Contracts\Validation\Validator $validator)
     {
         throw new ApiRequestException(
             $validator->errors()->first(),
