@@ -229,7 +229,7 @@ final class CloudFileController extends AuthController
             ['type', ''],
             ['url', 0],
         ]);
-        $res = $this->service->saveCloudFile($this->spaceId, auth('admin')->id(), $file, (int) $this->request->input('upload_type', sys_config('upload_type')));
+        $res = $this->service->saveCloudFile($this->spaceId, auth('admin')->id(), $file);
         return $this->success($res === true ? 'ok' : '上传成功', $res === true ? [] : $res, tips: 0);
     }
 

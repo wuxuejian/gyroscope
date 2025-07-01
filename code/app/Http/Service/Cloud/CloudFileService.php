@@ -393,7 +393,7 @@ class CloudFileService extends BaseService
      * @throws NotFoundExceptionInterface
      * @throws \ReflectionException
      */
-    public function saveCloudFile(int $spaceId, int $uid, array $fileInfo, int $upload_type)
+    public function saveCloudFile(int $spaceId, int $uid, array $fileInfo)
     {
         $this->checkAuth($spaceId, $uid, auth: CloudEnum::CREATE_AUTH, data: ['id' => $spaceId]);
         $key = 'upload.key.' . app('request')->ip();
@@ -415,7 +415,7 @@ class CloudFileService extends BaseService
             'is_temp'     => 0,
             'file_name'   => $fileInfo['name'],
             'name'        => pathinfo($fileInfo['name'])['filename'],
-            'upload_type' => $upload_type,
+            'upload_type' => sys_config('upload_type'),
             'user_id'     => $uid,
             'uid'         => app()->get(AdminService::class)->value($uid, 'uid'),
             'entid'       => 1,
