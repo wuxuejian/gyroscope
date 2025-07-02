@@ -151,7 +151,7 @@ class ApproveApplyController extends AuthController implements ResourceControlle
                 return $this->fail(__('common.empty.attr', ['attr' => '审批表单']));
             }
         }
-        $this->service->saveForm($form, $process, $approveId, $apply_id);
+        $this->service->saveForm($form, $process, (int) $approveId, (int) $apply_id, auth('admin')->id());
         return $this->success(__('common.insert.succ'));
     }
 
@@ -160,13 +160,13 @@ class ApproveApplyController extends AuthController implements ResourceControlle
      * @return mixed
      * @throws BindingResolutionException
      */
-    #[Get('revoke/{id}', '撤销申请')]
+    #[Post('revoke/{id}', '撤销申请')]
     public function revoke($id)
     {
         if (! $id) {
             return $this->fail(__('common.empty.attrs'));
         }
-        $this->service->revokeApply($id);
+        $this->service->revokeApply($id, auth('admin')->id(), $this->request->post('info', ''));
         return $this->success(__('common.operation.succ'));
     }
 
@@ -213,7 +213,49 @@ class ApproveApplyController extends AuthController implements ResourceControlle
         if (! $id) {
             return $this->fail(__('common.empty.attrs', ['attr' => 'id']));
         }
-        $this->service->urge($id, auth('admin')->id());
+        $this->service->urge((int) $id, auth('admin')->id());
+        return $this->success('操作成功');
+    }
+
+    /**
+     * 审批加签.
+     * @throws InvalidArgumentException
+     * @throws \ReflectionException
+     * @throws BindingResolutionException
+     */
+    #[Post('sign/{id}', '审批加签')]
+    public function sign($id): mixed
+    {
+        if (! $id) {
+            return $this->fail(__('common.empty.attrs', ['attr' => 'id']));
+        }
+        $data = $this->request->postMore([
+            ['user', []],
+            ['types', 0],
+            ['examine_mode', ''],
+            ['info', ''],
+        ]);
+        $this->service->addSign((int) $id, auth('admin')->id(), $data);
+        return $this->success('操作成功');
+    }
+
+    /**
+     * 审批加签.
+     * @throws InvalidArgumentException
+     * @throws \ReflectionException
+     * @throws BindingResolutionException
+     */
+    #[Post('transfer/{id}', '审批转审')]
+    public function transfer($id): mixed
+    {
+        if (! $id) {
+            return $this->fail(__('common.empty.attrs', ['attr' => 'id']));
+        }
+        $data = $this->request->postMore([
+            ['user', []],
+            ['info', ''],
+        ]);
+        $this->service->addTransfer((int) $id, auth('admin')->id(), $data);
         return $this->success('操作成功');
     }
 
