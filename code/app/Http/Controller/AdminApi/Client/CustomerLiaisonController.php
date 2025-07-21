@@ -86,7 +86,7 @@ class CustomerLiaisonController extends AuthController
         }
 
         $data = $this->request->postMore($service->getRequestFields(LiaisonEnum::LIAISON));
-        $res  = $this->service->saveLiaison($data, $eid, $this->uuid);
+        $res  = $this->service->saveLiaison($data, $eid, auth('admin')->id());
         return $this->success('common.insert.succ', ['id' => $res->id]);
     }
 

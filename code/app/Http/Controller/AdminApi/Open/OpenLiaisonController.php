@@ -62,7 +62,7 @@ class OpenLiaisonController extends AuthController
         if ($uid && ! $adminService->exists(['id' => $uid, 'status' => 1])) {
             return $this->fail('业务员不存在');
         }
-        $res = $this->service->saveLiaison($data, $eid, $uid);
+        $res = $this->service->saveLiaison($data, $eid, (int)$uid);
         return $this->success('common.insert.succ', ['id' => $res->id]);
     }
 
