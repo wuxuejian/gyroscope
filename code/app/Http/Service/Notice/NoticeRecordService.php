@@ -227,6 +227,17 @@ class NoticeRecordService extends BaseService
 
         // 解构模板数组以便后续使用
         ['system' => $system, 'sms' => $sms, 'work' => $work, 'ding' => $ding, 'bot' => $bot] = $templates;
+        if (! empty($system['url'])) {
+            if (empty($work['url'])) {
+                $work['url'] = sys_config('site_url') . $system['url'];
+            }
+            if (empty($ding['url'])) {
+                $ding['url'] = sys_config('site_url') . $system['url'];
+            }
+            if (empty($bot['url'])) {
+                $bot['url'] = sys_config('site_url') . $system['url'];
+            }
+        }
         // 系统消息
         $res['system_job_id'] = $this->systemSend($system, $messageInfo, $params, $other, $linkId, $linkStatus);
         // 短信消息
@@ -1039,7 +1050,7 @@ class NoticeRecordService extends BaseService
      * 获取可用的手机号列表.
      * @param mixed $messageInfo
      */
-    protected function getAvailablePhoneNumbers(array $messageInfo): array
+    protected function getAvailablePhoneNumbers($messageInfo): array
     {
         if (! empty($this->toId['phone'])) {
             return [$this->toId['phone']];
