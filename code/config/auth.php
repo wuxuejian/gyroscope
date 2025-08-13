@@ -13,6 +13,7 @@ declare(strict_types=1);
  *  +----------------------------------------------------------------------
  */
 use App\Http\Model\Admin\Admin;
+use App\Http\Model\Open\OpenApiKey;
 use App\Http\Model\User\User;
 
 return [
@@ -72,6 +73,11 @@ return [
             'provider' => 'user',
             'hash'     => true,
         ],
+        'openapi' => [
+            'driver' => 'jwt',
+            'provider' => 'openapi',
+            'hash' => true,
+        ],
     ],
 
     /*
@@ -100,6 +106,10 @@ return [
             'driver' => 'eloquent',
             'model'  => User::class,
         ],
+        'openapi' => [
+            'driver' => 'eloquent',
+            'model' => OpenApiKey::class,
+        ]
     ],
 
     /*
