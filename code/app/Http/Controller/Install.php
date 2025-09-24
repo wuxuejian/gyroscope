@@ -51,7 +51,7 @@ class Install extends AuthController
         error_reporting(E_ALL & ~E_NOTICE);
         $configFile = '.env';
         if (! file_exists(base_path($configFile))) {
-            return '缺少必要的安装文件!';
+            return '根目录缺少必要的安装文件.env!请从安装包中复制.env.example文件并重命名为.env!';
         }
         return $this->{'step' . (int) $step}();
     }
